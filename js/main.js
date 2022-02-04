@@ -1,11 +1,11 @@
 console.log ('file loaded');
 
-let outSidetemp = prompt('Vul hier wat');
+const myDiv = document.querySelector('.button');
 
-function outsidetemp(temprature) {
-  if  (outSidetemp  <= 9 ) {
-       alert('Het is nu koud');
-  }  
+function showAlert () {
+  alert('Je heb de button geclikt') ;
 }
 
-outSidetemp(temprature);
+if (myDiv) {
+  myDiv.addEventListener('click' , showAlert);
+}
