@@ -1,22 +1,28 @@
 console.log ('file loaded');
 
-const myName = ('Safa Tas') ;
-console.log(myName);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-let temPrature = 6;
-temPrature = temPrature + 5 ;
-console.log(temPrature);
-alert(`de tempratuur van vandaag is ${temPrature}`);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-document.body.innerHTML+=`IK ben safa <br> het is vandaag ${temPrature} geraden`;
-
-let userName = prompt('Wat is jouw naam');
-alert(`jouw naam is ${userName}`);
-
-const result = confirm('Wilt u cookies gaan accepteren');
-if (result ) {
-    alert('U heeft de cookies geaccepteerd');
-} else {
-    alert('u heeft de cookies niet geaccepteerd');
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
