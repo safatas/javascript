@@ -7,7 +7,11 @@ p {
     margin-top: 20%;
     border: 1px solid black;
     border-radius: 30px;
+    width: 300px;
+    float: right;
+    margin-top: -10px;
   }
   h1{
       text-align: center;
+      margin-top: 10px;
   }
