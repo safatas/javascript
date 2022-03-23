@@ -1,14 +1,16 @@
-const myName = 'Safa Tas';
-console.log(myName);
 
-let tempraTure = 15;
-alert(`de tempratuur van vandaag is ${tempraTure}`);
-tempraTure = tempraTure + 5 ;
-console.log(tempraTure);
+// let userPoint = prompt('Vul hier een scijfer in.');
 
-const result = confirm ('Wilt u cookies gaan accepteren');
-if (result) {
-    alert('je heb geaccepteerd');
-} else if (result) {
-    alert('je heb niet geaccepteerd');
+// let i = 0;
+
+// while(i < userPoint) {
+//     console.log(i);
+//     i++
+// }
+
+let x = 0
+
+while ( x < 10 ) {
+    console.log(x * 30,49)
+    x++
 }
