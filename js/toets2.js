@@ -1,16 +1,6 @@
 
-// let userPoint = prompt('Vul hier een scijfer in.');
+const myCars = ['ford', 'tesla', 'bmw'];
 
-// let i = 0;
-
-// while(i < userPoint) {
-//     console.log(i);
-//     i++
-// }
-
-let x = 0
-
-while ( x < 10 ) {
-    console.log(x * 30,49)
-    x++
+for(i = 0; i < myCars.length; i++) {
+ console.log(myCars[i]);
 }
