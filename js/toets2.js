@@ -53,3 +53,5 @@ function mylessen() {
             myArrays.innerHTML = heleArray;
         }
 }   
+
+myButton.addEventListener('click', mylessen);
