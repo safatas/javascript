@@ -44,7 +44,6 @@
 //  }
 
  let i =0;
- let foot =30.49;
  
  while (i <= 10) {
      i++;
