@@ -1,49 +1,53 @@
-const itemMarkplats = [    { 
-     titel: 'Glc 63s amg', 
-     description: 'Nette Mercedes. Motorisch uitstekend. 510 pk. Heeft geen schade het rijd prima.', 
-     price: 99500.00, 
-     kilometer: 69000, 
-    buildyear: 2018
-    },
- { 
-    titel: 'Glc 250d 4matic', 
-    description: 'Nette Mercedes. Motorisch uitstekend. 240 pk. Heeft geen schade het rijd prima met een panoramadak.', 
-    price: 25000.00, 
-    kilometer: 288000, 
-    buildyear: 2015
-   },
+const itemMarkplaats = [
     { 
-    titel: 'Porche cayenne 4.8 turbo tiptronic', 
-    description: 'Nette Porche. Motorisch uitstekend. 501 pk. Heeft geen schade het rijd prima.', 
-     price: 21950.00, 
-     kilometer: 267826, 
-    buildyear: 2010
+      title: 'Glc 63s amg', 
+      description: 'Nette Mercedes. Motorisch uitstekend. 510 pk. Heeft geen schade het rijd prima.', 
+      price: 99500.00, 
+      kilometer: 69000, 
+      buildYear: 2018
+  },
+  { 
+      title: 'Glc 250d 4matic', 
+      description: 'Nette Mercedes. Motorisch uitstekend. 240 pk. Heeft geen schade het rijd prima met een panoramadak.', 
+      price: 25000.00, 
+      kilometer: 288000, 
+      buildYear: 2015
    },
-    { 
-    titel: 'volksagen gti 2.0', 
-    description: 'Nette Golf. Motorisch uitstekend. 310 pk. Heeft geen schade het rijd prima.', 
-    price: 22500.00, 
-    kilometer: 142000, 
-    buildyear: 2017
+   { 
+      title: 'Porche cayenne 4.8 turbo tiptronic', 
+      description: 'Nette Porche. Motorisch uitstekend. 501 pk. Heeft geen schade het rijd prima.', 
+      price: 21950.00, 
+      kilometer: 267826, 
+      buildYear: 2010
    },
-    { 
-    titel: 'Golf 7 volksagen', 
-    description: 'Nette golf. Motorisch uitstekend. 150 pk. Heeft geen schade het rijd prima.', 
-    price: 16000.00, 
-    kilometer: 117000, 
-    buildyear: 2016
-   }]
- console.log(itemMarkplats)
+   { 
+      title: 'volksagen gti 2.0', 
+      description: 'Nette Golf. Motorisch uitstekend. 310 pk. Heeft geen schade het rijd prima.', 
+      price: 22500.00, 
+      kilometer: 142000, 
+      buildYear: 2017
+   },
+   { 
+      title: 'Golf 7 volksagen', 
+      description: 'Nette golf. Motorisch uitstekend. 150 pk. Heeft geen schade het rijd prima.', 
+      price: 16000.00, 
+      kilometer: 117000, 
+      buildYear: 2016
+   }
+];
+const myDiv = document.querySelector('.div');
 
- const myDiv = document.querySelector('.div');
-
-for (i = 0; i < itemMarkplats.length; i++ ) {
-    let item  = itemMarkplats[i]
-  document.body.innerHTML += `${itemMarkplats.title} + <br>`
+for (i = 0; i < itemMarkplaats.length; i++ ) {
+  let item  = itemMarkplaats[i]
+  document.body.innerHTML += `Title: ${item.title} <br>`
+  document.body.innerHTML += `Description: ${item.description} <br>`
+  document.body.innerHTML += `Price: ${item.price} <br>`
+  document.body.innerHTML += `Kilometers: ${item.kilometer} <br>`
+  document.body.innerHTML += `Build year: ${item.buildYear} <br>`
+  document.body.innerHTML += `******************** <br>`
 }
 
-
-const  itemsdirk = [
+const  itemsDrink = [
      { 
      title: 'Danerolles croissants', 
      description: '240 g', 
