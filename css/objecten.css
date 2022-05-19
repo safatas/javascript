@@ -7,6 +7,12 @@ body{
  .card{
    float: left;
    display: flex;
-   margin-left: 5px;
-   margin-top: 5px;
+   margin-left: 60px;
+   margin-top: 40px;
+   box-shadow: 0 4px 8px 0 black;
+   transition: 0.5s;
+   width: 40%;
  }
+ .card:hover {
+  box-shadow: 0 8px 18px 0 red;
+}
