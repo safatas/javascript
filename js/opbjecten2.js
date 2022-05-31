@@ -22,19 +22,27 @@ const myArray = [
         city : 'DenHaag',
     },
 ];
-
 const myText = document.querySelector('.div');
 
-for (let i = 0 ; i < myArray.length ; i++) {
-    let items = myArray[i]
+const myButton = document.querySelector('.submit');
+myButton.addEventListener('clik', mySafa);
 
-    document.body.innerHTML += `
-    <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">${items.name}</h5>
-    <p class="card-text">${items.street}</p>
-    <p class="card-text">${items.city}</p>
-  </div>
-</div>
+
+
+
+function mySafa() {
+    for (let i = 0 ; i < myArray.length ; i++) {
+        let items = myArray[i]
+    
+        document.body.innerHTML += `
+        <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">${items.name}</h5>
+        <p class="card-text">${items.street}</p>
+        <p class="card-text">${items.city}</p>
+      </div>
+    </div>
     `
-}
+    }
+};
+
