@@ -1,4 +1,6 @@
- vragen = document.querySelector('quizs');
+const continer = document.querySelector('.container')
+
+   
 
 
 const quizOpdracht = [
@@ -37,8 +39,7 @@ const quizOpdracht = [
         answerWrong3 : 'Rijswijk',
         answerGood :   'DenHAag',
     },
-
-    
+ 
 ]
 
 for(let i = 0; i < quizOpdracht.length; i++) {
@@ -46,10 +47,13 @@ for(let i = 0; i < quizOpdracht.length; i++) {
 
     document.body.innerHTML += `
     <h1 class="question">${items.quistion}</h1>
-    <h5 class="answerWrong1">${items.answerWrong1}</h5>
-    <h5 class="answerWrong2">${items.answerWrong2}</h5>
-    <h5 class="answerWrong3">${items.answerWrong3}</h5>
-  
+    <h5 class="answerWrong1"><input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">${items.answerWrong1}</label><br></h5>
+    <h5 class="answerWrong2"><input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">${items.answerWrong2}</label><br></h5>
+    <h5 class="answerWrong3"><input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">${items.answerWrong3}</label><br></h5>
 `
 }
+
 
