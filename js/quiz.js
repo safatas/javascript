@@ -1,4 +1,4 @@
-const continer = document.querySelector('.container')
+const container = document.querySelector('.container')
 
    
 
@@ -41,6 +41,7 @@ const quizOpdracht = [
     },
  
 ]
+let html = '<div class="row">';
 
 for(let i = 0; i < quizOpdracht.length; i++) {
     let items = quizOpdracht[i];
@@ -56,4 +57,9 @@ for(let i = 0; i < quizOpdracht.length; i++) {
 `
 }
 
+html += '</div>';
+
+container.innerHTML += html;
+
+const quizQuestions = 
 
