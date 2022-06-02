@@ -5,8 +5,8 @@ myButton.addEventListener('click',myVragen);
 const questions = [
     {
         "question": "Wat is mijn naam",
-        "optionA": "Safa Tas",
-        "optionB": "Berdan yilmaz",
+        "optionA": "Berdan Yilmaz",
+        "optionB": "Safa Tas",
         "optionC": "Senna oudshoorn",
         "optionD": "Bronco miete",
         "answer": "Safa Tas"
@@ -23,18 +23,18 @@ const questions = [
 
     {
         "question": "Welke school ga ik ",
-        "optionA": "Roc mondriaan",
+        "optionA": "Safa college",
         "optionB": "Mbo rijnland",
         "optionC": "Rijswijks lyceum",
-        "optionD": "Safa college",
+        "optionD": "Roc mondriaan",
         "answer": "Roc mondriaan"
     },
 
     {
         "question": "Welke auto heb ik",
-        "optionA": "Golf 7",
+        "optionA": "Porsche",
         "optionB": "Mercedes",
-        "optionC": "Porsche",
+        "optionC": "Golf 7",
         "optionD": "skoda",
         "answer": "Golf 7"
     },
@@ -86,9 +86,11 @@ function myVragen() {
         let currentQuizQuestion = questions[i];
         
         if(currentQuizQuestion.answer === givenAnswer) {
-            alert("Correct!")
+            swal( {
+                icon: "success",
+              });
         } else {
-            alert("Wrong!")
+            swal ( "Oops" ,  "Something went wrong!" ,  "error" )
         }
     }
 }
